@@ -1,0 +1,16 @@
+{
+  "name": "test-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:vercel": "vercel dev"
+  },
+  "keywords": [],
+  "author": "JohnTrump",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.53.0"
+  }
+}
