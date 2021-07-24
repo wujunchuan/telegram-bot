@@ -46,5 +46,5 @@ export default async (request: VercelRequest, response: VercelResponse) => {
     console.error("Error sending message");
     console.log(error.toString());
   }
-  response.send("OK");
+  response.send("祖宗之法不可变，五瓦为体，快充为用");
 };

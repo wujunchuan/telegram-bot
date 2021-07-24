@@ -4,8 +4,6 @@
 
 之所以选用 Vercel 是因为他是一个 Serverless 的云服务提供商，我的 Notion 博客就是部署在上面的，四舍五入约等于白嫖。
 
-![Fuck WeChat](https://i.loli.net/2021/07/24/iNwEsBtpuTYRdyF.jpg)
-
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
