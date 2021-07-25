@@ -25,7 +25,7 @@ const defaultConfig = {
     }
 } as UserConfig;
 
-export const parseCostflow = async (str: string, customConfig?: UserConfig) => {
+export const parseCostflow = async (str: string, customConfig?: UserConfig):Promise<string> => {
     const config = Object.assign({}, defaultConfig, customConfig);
     try {
         const { output } = await costflow.parse(str, config) as NParseResult.Result;
