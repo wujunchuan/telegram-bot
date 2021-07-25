@@ -34,8 +34,12 @@ export default async (request: VercelRequest, response: VercelResponse) => {
       /* 解析成 Beancount 语法 */
       try {
         const output = await parseCostflow(text);
-        await appendToBeancountContent(output!, text);
-        await bot.sendMessage(id, output!, { reply_to_message_id: message_id });
+        const isSkip = output.startsWith(';');
+        if (!isSkip) {
+          // 非注释，存入
+          await appendToBeancountContent(output!, text);
+        }
+        await bot.sendMessage(id, `${isSkip ? '跳过存储: ' + output : output!}`, { reply_to_message_id: message_id });
       } catch (e) {
         bot.sendMessage(id, `解析错误：${e.message}`, {
           reply_to_message_id: message_id,
