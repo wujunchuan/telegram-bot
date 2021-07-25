@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev:vercel": "vercel dev",
+    "https": "ngrok http 3000",
+    "tunnel": "lt --port 3000 --subdomain fuckwechat",
     "start": "pnpm run dev:vercel",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +21,8 @@
   "devDependencies": {
     "@types/node-telegram-bot-api": "^0.51.4",
     "@vercel/node": "^1.11.1",
+    "localtunnel": "^2.0.1",
+    "ngrok": "^4.0.1",
     "typescript": "^4.3.5",
     "vercel": "^23.0.1"
   }
