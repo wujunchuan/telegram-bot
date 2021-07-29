@@ -37,7 +37,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
         const isSkip = output.startsWith(';');
         if (!isSkip) {
           // 非注释，存入
-          await appendToBeancountContent(output!, text);
+          await appendToBeancountContent(output, text);
         }
         await bot.sendMessage(id, `${isSkip ? '跳过存储: ' + output : output!}`, { reply_to_message_id: message_id });
       } catch (e) {

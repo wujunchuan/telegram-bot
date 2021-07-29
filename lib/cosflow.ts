@@ -29,7 +29,7 @@ export const parseCostflow = async (str: string, customConfig?: UserConfig):Prom
     const config = Object.assign({}, defaultConfig, customConfig);
     try {
         const { output } = await costflow.parse(str, config) as NParseResult.Result;
-        return output;
+        return output || '';
     } catch (e) {
         throw new Error(e);
     }

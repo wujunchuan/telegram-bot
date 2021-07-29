@@ -17,6 +17,7 @@ export const appendToBeancountContent = async (data: string, msg: string) => {
             owner: OWNER,
             repo: REPO,
             // TODO: 根据年份归档
+
             path: 'example.bean',
         },
     );
