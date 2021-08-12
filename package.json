@@ -1,7 +1,7 @@
 {
-  "name": "test-bot",
+  "name": "trumps-telegram-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my personal telegram bot.",
   "main": "index.js",
   "scripts": {
     "dev:vercel": "vercel dev",
